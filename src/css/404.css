@@ -1,0 +1,6 @@
+body, html {
+    /* Full screen */
+    height: 100%;
+    margin: 0;
+    font-size: large;
+}

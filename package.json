@@ -1,0 +1,31 @@
+{
+  "name": "mocha",
+  "version": "1.0.0",
+  "description": "Mocha cofee demo",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node --experimental-modules test/test.mjs",
+    "lint": "eslint --ext .js --max-warnings=0 src/scripts/*",
+    "start": "node ./src/scripts/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dle-norm/mocha.git"
+  },
+  "author": "dlenormand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dle-norm/mocha/issues"
+  },
+  "homepage": "https://github.com/dle-norm/mocha#readme",
+  "dependencies": {
+    "eslint": "^8.21.0",
+    "node-fetch": "^3.2.10"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0"
+  }
+}
