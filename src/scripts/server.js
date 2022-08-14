@@ -1,9 +1,9 @@
 const http = require("http");
 const host = 'localhost';
-const port = 8080;
+const port = (process.env.PORT || 8080);
 const fs = require('fs').promises;
 const requestListener = function (req, res) {
-    console.log(req.url);
+    
     const whitelist = [
         '/index.html'
     ];

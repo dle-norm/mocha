@@ -1,7 +1,8 @@
 import fetch from 'node-fetch';
 
+const port = (process.env.PORT || 8080);
 // test if the redirection to 404 is operationnal.
-let url = "http://localhost:8080/badUri";
+let url = `http://localhost:${port}/badUri`;
 fetch(url)
   .then( res => res.text() )
   .then( data => {
@@ -14,7 +15,7 @@ fetch(url)
 });
 
 // test if the robots.txt is operationnal.
-url = "http://localhost:8080/robots.txt";
+url = `http://localhost:${port}/robots.txt`;
 fetch(url)
   .then( res => res.text() )
   .then( data => {
@@ -27,7 +28,7 @@ fetch(url)
 });
 
 // test if the sitemap.xml is operationnal.
-url = "http://localhost:8080/sitemap.xml";
+url = `http://localhost:${port}/sitemap.xml`;
 fetch(url)
   .then( res => res.text() )
   .then( data => { 
