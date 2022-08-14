@@ -3,87 +3,147 @@
     <head>
         <meta charset="utf-8">
         <title>Moca cafe</title>
-        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="/css/index-mobile.css">
+        <link rel="stylesheet" href="/css/index-pc.css">
     </head>
-    <body>
-        <div>
-            <img src="/assets/mochacafe/Ressources/logo.jpg" alt="logo">
-        </div>
-        <nav>
-            <p>
+    <body class="background">
+        <div class="background-header header-pc">
+            <span class="header-pub">
                 -50% sur l'addition à l'occasion de la journée de l'amitié ! Rendez-vous le 6 mai dans nos cafés !
-            </p>
-            <ul>
-                <li>Mon compte</li>
-                <li>&#9749; Panier</li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li>Menu</li>
-                <li>Nos Cafés</li>
-                <li>Nos Cookies</li>
-                <li>ArtCoffee</li>
-            </ul>
-        </nav>
-        <main>
-            <section>
-                <div>
-                    <img src="/assets/mochacafe/Ressources/Cafe-En-Grain.jpg" alt="Cafe-En-Grain">
-                    <h3>Un café fraichement torréfié</h3>
+            </span>
+            <span class="header-buttons">Mon compte</span>
+            <span class="header-button">&#9749; Panier</span>
+        </div>
+        <div class="background-header header-mobile">
+            <span class="header-pub">
+                -50% sur l'addition à l'occasion de la journée de l'amitié !<br> Rendez-vous le 6 mai dans nos cafés !
+            </span>
+            <div class="header-buttons">
+                <span>Mon compte</span>
+                <span class="header-button">&#9749; Panier</span>
+            </div>
+        </div>
+        <div class="background-body">
+            <div class="logo">
+                <img class="logo-image" src="/assets/mochacafe/Ressources/logo.jpg" alt="logo">
+            </div>
+            <nav class="nav-pc">
+                <div class="items">Menu</div>
+                <div class="items">Nos Cafés</div>
+                <div class="items">Nos Cookies</div>
+                <div class="items">ArtCoffee</div>
+            </nav>
+            <div class="nav-mobile">
+                <div class="nav-mobile-menu">
+                    <div>Menu</div>
                 </div>
-                <div>
-                    <img src="/assets/mochacafe/Ressources/150929101049-black-coffee-stock-exlarge-169.jpg" alt="Cafe-noir">
-                    <h3>Nos cafés</h3>
-                </div>
-                <div>
-                    <h1>Buvez un Café</h1>
-                    <h1>d'Exception</h1>
-                </div>
-                <div>
-                    <p>
-                        Fruits de variétés rares, issus de terroirs d'excellence, magnifiés par des<br>
-                        producteurs de haut vol er de fermentations pointues, les Cafés d'Exception<br>
-                        vous plongent dans une expérience, d'une intensité extrème.
-                    </p>
-                    <p>
-                        Café de méditation pour leur longeur en bouche, café de dégustation pour<br>
-                        leur complexité ou café d'enchantement pour leur histoire.<br>
-                        Les quantités sont cependant très réduites.
-                    </p>
-                    <button>
-                        Découvrez
-                    </button>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <img src="/assets/mochacafe/Ressources/cockroach-coffee-art-by-chang_1.jpg" alt="art-cafe">
-                    <h3>L'art du Café</h3>
-                </div>
-                <div>
-                    <img src="/assets/mochacafe/Ressources/Chocolate-Marshmallow-Cooki.jpg" alt="cookies-croquants">
-                    <h3>Des Cookies croquants !</h3>
-                </div>
-                <div>
-                    <img src="/assets/mochacafe/Ressources/HOPE-Coffee-@-DTS-2017-600x300.jpg" alt="contactez-nous">
-                    <h3>Contactez-nous !</h3>
-                </div>
-            </section>
-        </main>
-        <nav>
-            <ul>
-                <li>Menu</li>
-                <li>Nos Cafés</li>
-                <li>Nos Cookies</li>
-                <li>ArtCoffee</li>
-            </ul>
-        </nav>
+                <ul>
+                    <li class="nav-mobile-button">
+                        <div class="nav-mobile-icons">
+                            <div class="nav-mobile-icon">
+                            </div>
+                            <div class="nav-mobile-icon">
+                            </div>
+                            <div class="nav-mobile-icon">
+                            </div>
+                        </div>
+                        <ul class="nav-mobile-hover">
+                            <li>Nos Cafés</li>
+                            <li>Nos Cookies</li>
+                            <li>ArtCoffee</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <main>
+                <section>
+                    <div class="first-section">
+                        <div class="first-section-block-pc">
+                            <img class="first-section-image" src="/assets/mochacafe/Ressources/Cafe-En-Grain.jpg" alt="Cafe-En-Grain">
+                            <div class="first-section-text">Un café fraichement torréfié</div>
+                        </div>
+                        <div class="first-section-block-mobile">
+                            <img class="first-section-image" src="/assets/mochacafe/Ressources/coffee-571245571.jpg" alt="Cafe-En-Grain">
+                            <div class="first-section-text">Des Grains de Café exceptionnels</div>
+                        </div>
+                        <div class="first-section-block-second">
+                            <img class="first-section-image" src="/assets/mochacafe/Ressources/150929101049-black-coffee-stock-exlarge-169.jpg" alt="Cafe-noir">
+                            <div class="first-section-text" >Nos cafés</div>
+                        </div>
+                    </div>
+                    <div class="first-section">
+                        <div class="first-section-block-pc first-section-block-mobile first-section-phrasing">
+                            <span>Buvez un Café</span>
+                            <span class="first-section-phrasing-color">d'Exception</span>
+                        </div>
+                        <div class="first-section-block-second first-section-paragraphe">
+                            <p>
+                                Fruits de variétés rares, issus de terroirs d'excellence, magnifiés par des<br>
+                                producteurs de haut vol et de fermentations pointues, les Cafés d'Exception<br>
+                                vous plongent dans une expérience, d'une intensité extrème.
+                            </p>
+                            <p>
+                                Café de méditation pour leur longeur en bouche, café de dégustation pour<br>
+                                leur complexité ou café d'enchantement pour leur histoire.<br>
+                                Les quantités sont cependant très réduites.
+                            </p>
+                            <span>
+                                <button class="first-section-button">
+                                    Découvrez
+                                </button>
+                            </span>
+                        </div>
+                        <div class="first-section-block-second first-section-paragraphe-mobile">
+                            <p>
+                                Fruits de variétés rares, issus de terroirs<br>
+                                d'excellence, magnifiés par des producteurs de<br>
+                                haut vol et de fermentations pointues, les Cafés<br>
+                                d'Exception vous plongent dans une expérience,<br>
+                                d'une intensité extrème.
+                            </p>
+                            <p>
+                                Café de méditation pour leur longeur en bouche,<br>
+                                café de dégustation pour leur complexité ou café<br>
+                                d'enchantement pour leur histoire.<br>
+                                Les quantités sont cependant très réduites.
+                            </p>
+                            <span>
+                                <button class="first-section-button">
+                                    Découvrez
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="second-section">
+                        <div class="second-section-block">
+                            <img class="second-section-image" src="/assets/mochacafe/Ressources/cockroach-coffee-art-by-chang_1.jpg" alt="art-cafe">
+                            <div class="second-section-text">L'art du Café</div>
+                        </div>
+                        <div class="second-section-block">
+                            <img class="second-section-image" src="/assets/mochacafe/Ressources/Chocolate-Marshmallow-Cooki.jpg" alt="cookies-croquants">
+                            <div class="second-section-text">Des Cookies croquants !</div>
+                        </div>
+                        <div class="second-section-block-last">
+                            <img class="second-section-image" src="/assets/mochacafe/Ressources/HOPE-Coffee-@-DTS-2017-600x300.jpg" alt="contactez-nous">
+                            <div class="second-section-text">Contactez-nous !</div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
         <footer>
-            <ul>
-                <li>Mentions légales</li>
-                <li>Moca Café - 2018</li>
-            </ul>
+            <nav>
+                <div class="items">Menu</div>
+                <div class="items">Nos Cafés</div>
+                <div class="items">Nos Cookies</div>
+                <div class="items">ArtCoffee</div>
+            </nav>
+            <div class="condition">
+                <div class="items">Mentions légales</div>
+                <div class="items">Moca Café - 2018</div>
+            </div>
         </footer>
     </body>
 </html>
