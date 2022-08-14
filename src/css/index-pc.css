@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Roboto Slab Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('RobotoSlab-Regular'), url('../assets/mochacafe/Ressources/RobotoSlab-Regular.ttf');
+}
+@media screen and (min-device-width: 601px) {
+    body {
+        font-family: 'Roboto Slab Regular';
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .background {
+        background-color: #C7B299;
+    }
+
+    .header-mobile {
+        display: none !important;
+    }
+
+    .background-header {
+        background-color: #553019;
+        color: #FFFFFF;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 40px;
+    }
+
+    .background-body {
+        margin-left: 15%;
+        margin-right: 15%;
+        background-color: #FFFFFF;
+    }
+
+    .header-pub {
+        font-size: 10px;
+        margin-right: 40px;
+        position: relative;
+    }
+
+    .header-buttons {
+        font-size: 12px;
+    }
+
+    .header-button {
+        font-size: 12px;
+        padding-left: 10px;
+        position: relative;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-image {
+        width: 45%;
+        height: 45%;
+    }
+
+    .first-section {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-section-block-mobile {
+        display: none;
+    }
+
+    .first-section-block-pc {
+        padding-left: 30px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .first-section-block-second {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .first-section-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .first-section-text {
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .first-section-phrasing {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 36px;
+        font-weight: bold;
+        align-content: stretch;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .first-section-phrasing-color {
+        color: #AA7B51;
+        font-size: 41px;
+    }
+
+    .first-section-paragraphe {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 10px;
+    }
+    
+    .first-section-paragraphe-mobile {
+        display: none
+    }
+
+    .first-section-button {
+        font-weight: bold;
+        color: #FFFFFF;
+        height: 25px;
+        width: 90px;
+        border: none;
+        background-color: #AA7B51;
+    }
+
+    .second-section {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .second-section-block {
+        padding-left: 30px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .second-section-block-last {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .second-section-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .second-section-text {
+        font-size: 13px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        background-color: #AA7B51;
+        color: #FFFFFF;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    footer {
+        margin-left: 0%;
+        margin-right: 0%;
+        background-color: #AA7B51;
+        color: #FFFFFF;
+        height: 80px;
+    }
+
+    .condition {
+        font-size: 8px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        height: 40px;
+        justify-content: center;
+    }
+
+    .items {
+        padding-left: 20px;
+    }
+}
