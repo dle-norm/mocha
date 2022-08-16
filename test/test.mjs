@@ -1,11 +1,12 @@
 import fetch from 'node-fetch';
 
+const port = (process.env.PORT || 8080);
 // test if the redirection to 404 is operationnal.
-let url = "http://localhost:8000/badUri";
+let url = `http://localhost:${port}/badUri`;
 fetch(url)
   .then( res => res.text() )
-  .then( data => { 
-    const notFound = `<!doctype html><html lang="fr">    <head>        <meta charset="utf-8">        <title>404 NOT FOUND</title>        <link rel="stylesheet" href="./css/404.css">        <script src="./scripts/404.js"></script>    </head>    <body>        <p>En construction</p>        <a href="/">            Retourner à l'accueil        </a>    </body></html>`;
+  .then( data => {
+    const notFound = `<!doctype html><html lang="fr">    <head>        <meta charset="utf-8">        <title>404 NOT FOUND</title>    </head>    <body>        <p>En construction</p>        <a href="/">            Retourner à l'accueil        </a>    </body></html>`;
     if (data.replace(/[\n\r]+/g, '').trim() === notFound) {
       console.log('404 good !!!');
     } else {
@@ -14,7 +15,7 @@ fetch(url)
 });
 
 // test if the robots.txt is operationnal.
-url = "http://localhost:8000/robots.txt";
+url = `http://localhost:${port}/robots.txt`;
 fetch(url)
   .then( res => res.text() )
   .then( data => {
@@ -27,7 +28,7 @@ fetch(url)
 });
 
 // test if the sitemap.xml is operationnal.
-url = "http://localhost:8000/sitemap.xml";
+url = `http://localhost:${port}/sitemap.xml`;
 fetch(url)
   .then( res => res.text() )
   .then( data => { 

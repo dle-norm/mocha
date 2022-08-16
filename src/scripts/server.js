@@ -1,12 +1,14 @@
 const http = require("http");
-const host = 'localhost';
-const port = 8000;
+const port = (process.env.PORT || 8080);
 const fs = require('fs').promises;
 const requestListener = function (req, res) {
+
     const whitelist = [
-        '/scripts/index.js',
-        '/css/index.css',
         '/index.html'
+    ];
+    const css = [
+        "/css/index-pc.css",
+        "/css/index-mobile.css"
     ];
     const images = [
         '/assets/mochacafe/Ressources/logo.jpg',
@@ -15,6 +17,7 @@ const requestListener = function (req, res) {
         '/assets/mochacafe/Ressources/cockroach-coffee-art-by-chang_1.jpg',
         '/assets/mochacafe/Ressources/Chocolate-Marshmallow-Cooki.jpg',
         '/assets/mochacafe/Ressources/HOPE-Coffee-@-DTS-2017-600x300.jpg',
+        '/assets/mochacafe/Ressources/coffee-571245571.jpg',
     ];
     if (whitelist.includes(req.url)) { 
         fs.readFile(__dirname + `/../${req.url}`).then(contents => {
@@ -29,6 +32,26 @@ const requestListener = function (req, res) {
     } else if (images.includes(req.url)) { 
         fs.readFile(__dirname + `/../${req.url}`).then(contents => {
             res.setHeader("Content-Type", "image/jpg");
+            res.writeHead(200);
+            res.end(contents);
+        }).catch(err => {
+            res.writeHead(500);
+            res.end(err);
+            return;
+        });
+    } else if (req.url === "/assets/mochacafe/Ressources/RobotoSlab-Regular.ttf") { 
+        fs.readFile(__dirname + `/../assets/mochacafe/Ressources/RobotoSlab-Regular.ttf`).then(contents => {
+            res.setHeader("Content-Type", "binary/octet-stream");
+            res.writeHead(200);
+            res.end(contents);
+        }).catch(err => {
+            res.writeHead(500);
+            res.end(err);
+            return;
+        });
+    } else if (css.includes(req.url)) {
+        fs.readFile(__dirname + `/../${req.url}`).then(contents => {
+            res.setHeader("Content-Type", "text/css");
             res.writeHead(200);
             res.end(contents);
         }).catch(err => {
@@ -81,6 +104,6 @@ const requestListener = function (req, res) {
 };
 
 const server = http.createServer(requestListener);
-server.listen(port, host, () => {
-    console.log(`Server is running on http://${host}:${port}`);
+server.listen(port, () => {
+    console.log(`Server is running on port :${port}`);
 });
